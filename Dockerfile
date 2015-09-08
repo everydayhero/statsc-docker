@@ -5,6 +5,7 @@ EXPOSE 8127
 
 RUN mkdir -p /usr/local/statsc
 
+COPY serve /
 COPY . /usr/local/statsc/
 WORKDIR /usr/local/statsc/
 
